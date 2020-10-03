@@ -1,45 +1,56 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+
 ## [Unreleased]
 ### Patched
 - Quick fix for `trade_deadline` attribute in `Settings` class. Will search for better alternative.
 
+
 ### Other
 - Reorganized structure of `espnff` package for future development
+
 
 ## [1.3.1] - 2017-07-24
 ### Added
 - Added CI testing for Python 3.6
 
+
 ### Patched
 - Fixed issue where map for `playoff_seed_tie_rule` was wrong.
+
 
 ## [1.3.0] - 2016-12-12
 ### Added
 - Added `settings` attribute for league instance.
 - Added `roster`, `tie_rule`, and `playoff_seed_tie_rule` to `settings`
 
+
 ## [1.2.3] - 2016-12-06
 ### Patched
 - Fixed issue where bye weeks were breaking `scoreboard()` function.
+
 
 ## [1.2.2] - 2016-11-30
 ### Patched
 - Fixed `power_rankings()` issue where execution would print matrices.
 
+
 ## [1.2.1] - 2016-11-29
 ### Patched
 - Fixed `power_rankings()` issue where lists were out of range.
+
 
 ## [1.2.0] - 2016-11-25
 ### Added
 - Added scoreboard function to League instance.
 - Added tests for scoreboard function.
 
+
 ### Removed
 - Removed deprecation warnings, fully converted to new attributes.
 - Removed need for `numpy` package.
+
 
 
 ## [1.1.0] - 2016-10-18
@@ -51,6 +62,7 @@ All notable changes to this project will be documented in this file.
 - Exceptions for status codes.
 - Tests for future development.
 
+
 ### Changed
 - Deprecation warnings for `Team` class attributes. Next Version
 will remove old attributes.
@@ -60,21 +72,26 @@ will remove old attributes.
 - `from espnff import *` now only imports `League` and `Team`.
 
 
+
 ## [1.0.1] - 2016-10-18
 ### Added
 - Tests for utility functions.
 
+
 ### Changed
 - Output for matrix functions now lists instead of numpy array.
+
 
 ### Fixed
 - Fix issue where not all teams showed in power rankings.
 - Fix issue where power rankings output was not sorted.
 
+
 ## [1.0.0] - 2016-10-04
 ### Added
 - New attributes for Teams.
 - Started using Semantic Versioning.
+
 
 ### Changed
 - Replaced urls with ESPN's private API url.
@@ -82,23 +99,28 @@ will remove old attributes.
 - `get_week` function now `power_rankings`
 - Teams now accessable as list attribute in `League`.
 
+
 ### Removed
 - `get_member`
 - `get_all_members`
+
 
 ## 0.2.2 - 2016-09-27
 ### Fixed
 - Fix issue where margin of victory calculation in the power rankings
 algorithm accounted for 50% of the total power points. Should have been 5%.
 
+
 ## 0.2.1 - 2016-09-15
 ### Fixed
 - Fix issue where scores from games that weren't played would become
 a string character instead of an integer.
 
+
 ## 0.2.0 - 2016-07-03
 ### Changed
 - Rearranged output for `get_week`.
+
 
 ## 0.1.0 - 2016-05-13
 ### Added
@@ -106,8 +128,9 @@ a string character instead of an integer.
 - README information.
 - `setup.py` to turn project into module.
 
+
 ### Changed
-- Renamed `power_rankings.py` to `espnff.py`.
+- Renamed `power_rankings.py` to `espnff.py`. 
 
 ## 0.0.0 - 2016-05-12
 ### Added
